@@ -17,8 +17,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        
-        // Hide and lock the mouse
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -29,7 +27,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // 1. Handle Looking
+        // Handle Looking
         float mouseX = lookInput.x * sensitivity;
         float mouseY = lookInput.y * sensitivity;
 
@@ -39,8 +37,7 @@ public class PlayerController : MonoBehaviour
         camTransform.localRotation = Quaternion.Euler(xRotation, 0f, 0f); // Rotate cam up/down
         transform.Rotate(Vector3.up * mouseX); // Rotate player body left/right
 
-        // 2. Handle Moving
-        // Move relative to where the player is facing
+        // Handle Moving
         Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
         
         if (move.magnitude > 1) move.Normalize();
