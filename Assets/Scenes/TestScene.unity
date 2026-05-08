@@ -1013,8 +1013,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e80c78f7f21dd46bf659527f3c51c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraBiologicalFollow
-  targetBone: {fileID: 1672817706}
-  offset: {x: 0, y: 1.7, z: 0}
+  targetBone: {fileID: 1177227251}
+  offset: {x: 0, y: 0.0035, z: 0.001}
   followSharpness: 15
 --- !u!1001 &636731116
 PrefabInstance:
@@ -1627,6 +1627,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957932138}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1177227251 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4034557153661649895, guid: 38909a98410798e4dbd00e09809c0513, type: 3}
+  m_PrefabInstance: {fileID: 636731116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1613453915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,11 +1666,6 @@ Transform:
   - {fileID: 770412584}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1672817706 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1932421604923968559, guid: 38909a98410798e4dbd00e09809c0513, type: 3}
-  m_PrefabInstance: {fileID: 636731116}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1776115176
 GameObject:
   m_ObjectHideFlags: 0
